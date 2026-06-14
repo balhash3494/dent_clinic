@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaDent — Премиальная стоматология Москвы</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  <a href="#services">Услуги</a>
+  <a href="#doctors">Врачи</a>
+  <a href="#process">Как работаем</a>
+  <a href="#reviews">Отзывы</a>
+  <a href="#booking">Запись</a>
+</nav>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo">
+    <div class="logo-mark">N</div>
+    NovaDent
+  </div>
+  <nav class="nav">
+    <a href="#services">Услуги</a>
+    <a href="#doctors">Врачи</a>
+    <a href="#process">Как работаем</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#booking">Контакты</a>
+  </nav>
+  <a href="#booking" class="header-cta desktop">Записаться</a>
+  <div class="burger" onclick="openMobileNav()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Премиальная стоматология — Москва</div>
+    <h1>
+      Улыбка,<br>
+      которой<br>
+      <em>доверяют</em>
+    </h1>
+    <p class="hero-sub">
+      Мы создаём здоровые и красивые улыбки с 2009 года. Команда из 12 специалистов, авторские протоколы лечения и европейские стандарты — всё это NovaDent.
+    </p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary">
+        Записаться на приём
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button class="btn-ghost" onclick="document.getElementById('doctors').scrollIntoView({behavior:'smooth'})">
+        Познакомиться с врачами
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num counter" data-target="15">0</div>
+        <div class="hero-stat-label">лет на рынке</div>
+      </div>
+      <div>
+        <div class="hero-stat-num"><span class="counter" data-target="8400">0</span>+</div>
+        <div class="hero-stat-label">довольных пациентов</div>
+      </div>
+      <div>
+        <div class="hero-stat-num"><span class="counter" data-target="98">0</span>%</div>
+        <div class="hero-stat-label">рекомендуют друзьям</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-img">
+      <div class="hero-photo-bg"></div>
+      <div class="hero-photo-person" style="position:absolute;inset:0;transform:none;width:100%;height:100%">
+        <img
+          src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=900&q=85&fit=crop&crop=top"
+          alt="Врач NovaDent"
+          style="width:100%;height:100%;object-fit:cover;object-position:top center;mix-blend-mode:luminosity;opacity:.8"
+          loading="eager"
+        >
+      </div>
+      <div class="hero-badge">
+        <div class="hero-badge-label">Гарантия лечения</div>
+        <div class="hero-badge-val">5 лет</div>
+        <div class="hero-badge-sub">на все виды работ</div>
+      </div>
+      <div class="hero-badge hero-badge-2">
+        <div class="hero-badge-label">Лицензия МЗ РФ</div>
+        <div class="hero-badge-val">№ ЛО-77</div>
+        <div class="hero-badge-sub">действует с 2009</div>
+      </div>
+      <div class="hero-accent-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ACHIEVEMENTS ═══ -->
+<section class="achievements" id="about">
+  <div style="max-width:1280px;margin:0 auto">
+    <div class="achievements-grid">
+      <div class="ach-cell featured reveal">
+        <div class="ach-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <div class="ach-num">98%</div>
+        <div class="ach-label">Рейтинг удовлетворённости</div>
+        <div class="ach-desc">
+          По данным ежегодного анонимного опроса пациентов — наивысший показатель среди стоматологических клиник ЦАО Москвы по итогам 2023 года.
+        </div>
+      </div>
+      <div class="ach-cell reveal reveal-delay-1">
+        <div class="ach-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="ach-num">15+</div>
+        <div class="ach-label">Лет опыта</div>
+        <div class="ach-desc">Открыты в 2009 году. За это время сформировали команду из 12 врачей-экспертов.</div>
+      </div>
+      <div class="ach-cell reveal reveal-delay-2">
+        <div class="ach-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="ach-num">8 400</div>
+        <div class="ach-label">Пациентов</div>
+        <div class="ach-desc">Более 8 тысяч человек, которым мы вернули здоровье и красоту улыбки.</div>
+      </div>
+      <div class="ach-cell reveal reveal-delay-1">
+        <div class="ach-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="ach-num">4</div>
+        <div class="ach-label">Авторских протокола</div>
+        <div class="ach-desc">Разработали собственные клинические протоколы лечения, сокращающие срок реабилитации.</div>
+      </div>
+      <div class="ach-cell reveal reveal-delay-2">
+        <div class="ach-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div class="ach-num">5 лет</div>
+        <div class="ach-label">Гарантия</div>
+        <div class="ach-desc">Письменная гарантия на все виды стоматологических работ — без исключений.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="section services" id="services">
+  <div class="section-inner">
+    <div class="services-header reveal">
+      <div>
+        <div class="section-label">Что мы делаем</div>
+        <h2>Полный спектр<br>стоматологических<br>услуг</h2>
+      </div>
+      <div>
+        <p class="services-intro">
+          Каждое лечение — это индивидуальный план, составленный несколькими специалистами. Мы не лечим по шаблону: важен каждый пациент и каждый зуб.
+        </p>
+        <br>
+        <a href="#booking" class="services-link">
+          Все услуги и цены
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="services-layout reveal">
+      <!-- Card 1: Large -->
+      <div class="svc-card large">
+        <div class="svc-bg svc-bg-1"></div>
+        <div class="svc-overlay"></div>
+        <div class="svc-content">
+          <div class="svc-cat">Эстетика</div>
+          <div class="svc-name">Виниры<br>&amp; Коронки</div>
+          <div class="svc-price">от 18 000 ₽ за единицу</div>
+        </div>
+        <div class="svc-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="svc-card">
+        <div class="svc-bg svc-bg-2"></div>
+        <div class="svc-overlay"></div>
+        <div class="svc-content">
+          <div class="svc-cat">Восстановление</div>
+          <div class="svc-name">Имплантация</div>
+          <div class="svc-price">от 42 000 ₽ под ключ</div>
+        </div>
+        <div class="svc-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="svc-card">
+        <div class="svc-bg svc-bg-3"></div>
+        <div class="svc-overlay"></div>
+        <div class="svc-content">
+          <div class="svc-cat">Исправление</div>
+          <div class="svc-name">Брекеты<br>&amp; Элайнеры</div>
+          <div class="svc-price">от 75 000 ₽ за курс</div>
+        </div>
+        <div class="svc-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+      <!-- Card 4: Wide -->
+      <div class="svc-card wide">
+        <div class="svc-bg svc-bg-4"></div>
+        <div class="svc-overlay"></div>
+        <div class="svc-content">
+          <div class="svc-cat">Профилактика</div>
+          <div class="svc-name">Профессиональная гигиена и отбеливание</div>
+          <div class="svc-price">от 4 500 ₽ за сеанс</div>
+        </div>
+        <div class="svc-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="svc-card">
+        <div class="svc-bg svc-bg-5"></div>
+        <div class="svc-overlay"></div>
+        <div class="svc-content">
+          <div class="svc-cat">Детская</div>
+          <div class="svc-name">Лечение детей</div>
+          <div class="svc-price">от 2 800 ₽</div>
+        </div>
+        <div class="svc-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DOCTORS ═══ -->
+<section class="section doctors" id="doctors">
+  <div class="wm-number" style="right:-40px;top:40px">12</div>
+  <div class="section-inner" style="position:relative;z-index:1">
+    <div class="doctors-header reveal">
+      <div class="section-label">Наша команда</div>
+      <h2>Врачи, которым<br>вы доверяете</h2>
+    </div>
+    <div class="doctors-grid">
+
+      <!-- Featured Doctor -->
+      <div class="doc-card featured reveal">
+        <div class="doc-photo">
+          <div class="doc-photo-bg doc-bg-1" style="padding:0;overflow:hidden">
+            <img
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&q=85&fit=crop&crop=top"
+              alt="Александр Викторович Коротков"
+              style="width:100%;height:100%;object-fit:cover;object-position:top center"
+              loading="lazy"
+            >
+          </div>
+          <div class="doc-award"><span class="doc-award-star">★</span> Топ-врач 2023</div>
+        </div>
+        <div class="doc-info">
+          <div class="doc-spec">Главный врач · Имплантолог</div>
+          <div class="doc-name">Александр Викторович Коротков</div>
+          <div class="doc-exp">Опыт 18 лет · Кандидат медицинских наук</div>
+          <div class="doc-tags">
+            <span class="doc-tag">Имплантология</span>
+            <span class="doc-tag">Протезирование</span>
+            <span class="doc-tag">Хирургия</span>
+            <span class="doc-tag">All-on-4</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctor 2 -->
+      <div class="doc-card reveal reveal-delay-1">
+        <div class="doc-photo">
+          <div class="doc-photo-bg doc-bg-2" style="height:280px;padding:0;overflow:hidden">
+            <img
+              src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&q=85&fit=crop&crop=top"
+              alt="Мария Сергеевна Ильина"
+              style="width:100%;height:100%;object-fit:cover;object-position:top center"
+              loading="lazy"
+            >
+          </div>
+        </div>
+        <div class="doc-info">
+          <div class="doc-spec">Ортодонт</div>
+          <div class="doc-name">Мария Сергеевна Ильина</div>
+          <div class="doc-exp">Опыт 12 лет</div>
+          <div class="doc-tags">
+            <span class="doc-tag">Брекеты</span>
+            <span class="doc-tag">Элайнеры</span>
+            <span class="doc-tag">Детская ортодонтия</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctor 3 -->
+      <div class="doc-card reveal reveal-delay-2">
+        <div class="doc-photo">
+          <div class="doc-photo-bg doc-bg-3" style="height:280px;padding:0;overflow:hidden">
+            <img
+              src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=600&q=85&fit=crop&crop=top"
+              alt="Дмитрий Олегович Павлов"
+              style="width:100%;height:100%;object-fit:cover;object-position:top center"
+              loading="lazy"
+            >
+          </div>
+        </div>
+        <div class="doc-info">
+          <div class="doc-spec">Терапевт · Эстетика</div>
+          <div class="doc-name">Дмитрий Олегович Павлов</div>
+          <div class="doc-exp">Опыт 9 лет</div>
+          <div class="doc-tags">
+            <span class="doc-tag">Виниры</span>
+            <span class="doc-tag">Отбеливание</span>
+            <span class="doc-tag">Реставрации</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA strip -->
+    <div style="margin-top:56px;display:flex;align-items:center;justify-content:space-between;padding:32px 40px;background:var(--smoke);border-radius:var(--radius-md)" class="reveal">
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;margin-bottom:4px">В команде 12 специалистов</div>
+        <div style="font-size:.85rem;color:var(--text-secondary)">Хирурги, ортодонты, терапевты, детские врачи</div>
+      </div>
+      <a href="#booking" style="background:var(--midnight);color:#fff;padding:14px 32px;border-radius:100px;font-size:.82rem;letter-spacing:.06em;white-space:nowrap">Выбрать врача</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section class="section process" id="process">
+  <div class="section-inner">
+    <div class="process-layout">
+      <div class="process-visual reveal">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+          <svg viewBox="0 0 400 400" style="width:280px;opacity:.4" fill="none">
+            <circle cx="200" cy="200" r="180" stroke="rgba(200,169,110,0.3)" stroke-width="1"/>
+            <circle cx="200" cy="200" r="120" stroke="rgba(43,95,142,0.4)" stroke-width="1"/>
+            <circle cx="200" cy="200" r="60" fill="rgba(200,169,110,0.15)"/>
+            <!-- Cross/medical symbol -->
+            <rect x="185" y="160" width="30" height="80" rx="4" fill="rgba(200,169,110,0.5)"/>
+            <rect x="160" y="185" width="80" height="30" rx="4" fill="rgba(200,169,110,0.5)"/>
+            <!-- orbit dots -->
+            <circle cx="200" cy="20" r="6" fill="rgba(200,169,110,0.6)"/>
+            <circle cx="380" cy="200" r="6" fill="rgba(43,95,142,0.6)"/>
+            <circle cx="200" cy="380" r="6" fill="rgba(200,169,110,0.4)"/>
+            <circle cx="20" cy="200" r="6" fill="rgba(43,95,142,0.4)"/>
+          </svg>
+        </div>
+        <div class="process-vis-label">
+          <h4>Комфортное лечение</h4>
+          <p>Современное оборудование, анестезия без боли, индивидуальный подход</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label reveal">Как мы работаем</div>
+        <h2 class="reveal" style="margin-bottom:48px">От первого<br>визита — к<br>идеальной улыбке</h2>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h4>Консультация и диагностика</h4>
+              <p>3D-снимок, осмотр и составление плана лечения. Рассказываем всё честно — без скрытых платежей.</p>
+            </div>
+            <div class="step-connector"></div>
+          </div>
+          <div class="process-step reveal reveal-delay-1">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h4>Индивидуальный план</h4>
+              <p>Разрабатываем план лечения вместе с вами. Несколько вариантов на выбор с разными бюджетами.</p>
+            </div>
+            <div class="step-connector"></div>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h4>Лечение и сопровождение</h4>
+              <p>Проводим все процедуры в удобное для вас время. Врач доступен для вопросов 24/7.</p>
+            </div>
+            <div class="step-connector"></div>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <div class="step-num">04</div>
+            <div class="step-body">
+              <h4>Гарантия и поддержка</h4>
+              <p>5-летняя письменная гарантия на работы. Плановые осмотры раз в полгода — бесплатно.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="section testimonials" id="reviews">
+  <div class="section-inner">
+    <div class="testimonials-header reveal">
+      <div class="section-label" style="color:var(--brass)">Отзывы</div>
+      <h2>Реальные истории<br>наших пациентов</h2>
+    </div>
+    <div class="reviews-layout">
+
+      <!-- Featured review -->
+      <div class="review-card featured reveal">
+        <div class="openquote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">
+          До NovaDent я обошла пять клиник и везде слышала разные диагнозы. Здесь сделали полный 3D-снимок, объяснили всё доступно и составили план лечения на два года. Сейчас я улыбаюсь на каждой фотографии — впервые за десять лет. Это не просто стоматология, это изменение качества жизни.
+        </p>
+        <div class="review-author">
+          <div class="review-avatar av-1" style="overflow:hidden;background:none"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80&fit=crop&crop=face" alt="Анна" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="review-author-info">
+            <h4>Анна Громова</h4>
+            <p>Пациент клиники с 2021 года</p>
+          </div>
+        </div>
+        <div class="review-treatment">Комплексная реабилитация</div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card standard reveal reveal-delay-1">
+        <div class="openquote" style="font-size:3rem">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote" style="font-size:1rem">
+          Поставили имплант вместо удалённого зуба. Всё прошло быстро, без боли. Доктор Коротков — настоящий профессионал.
+        </p>
+        <div class="review-author">
+          <div class="review-avatar av-2" style="overflow:hidden;background:none"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80&fit=crop&crop=face" alt="Константин" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="review-author-info">
+            <h4>Константин Белов</h4>
+            <p>Имплантация, 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card standard reveal reveal-delay-2">
+        <div class="openquote" style="font-size:3rem">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote" style="font-size:1rem">
+          Наконец нашли место, куда не страшно вести ребёнка. Детский врач потрясающий — дочь ждёт визитов с нетерпением!
+        </p>
+        <div class="review-author">
+          <div class="review-avatar av-3" style="overflow:hidden;background:none"><img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80&fit=crop&crop=face" alt="Екатерина" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="review-author-info">
+            <h4>Екатерина Морозова</h4>
+            <p>Детская стоматология</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Review aggregate -->
+    <div style="margin-top:48px;display:flex;align-items:center;gap:48px;flex-wrap:wrap" class="reveal">
+      <div style="display:flex;align-items:center;gap:16px">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:#fff;line-height:1">4.9</div>
+        <div>
+          <div style="color:var(--brass);font-size:1.1rem;letter-spacing:4px">★★★★★</div>
+          <div style="font-size:.78rem;opacity:.4;margin-top:4px">на основе 340 отзывов</div>
+        </div>
+      </div>
+      <div style="width:1px;height:60px;background:rgba(255,255,255,.1)"></div>
+      <div style="display:flex;gap:32px">
+        <div style="text-align:center">
+          <div style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.4;margin-bottom:6px">Яндекс</div>
+          <div style="color:#fff;font-size:1.1rem">4.9 ★</div>
+        </div>
+        <div style="text-align:center">
+          <div style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.4;margin-bottom:6px">Google</div>
+          <div style="color:#fff;font-size:1.1rem">4.8 ★</div>
+        </div>
+        <div style="text-align:center">
+          <div style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.4;margin-bottom:6px">ПроДокторов</div>
+          <div style="color:#fff;font-size:1.1rem">5.0 ★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BOOKING ═══ -->
+<section class="booking" id="booking">
+  <div class="booking-inner">
+    <div class="booking-left reveal">
+      <div class="section-label" style="color:var(--brass)">Запись на приём</div>
+      <h2>Начните с<br>бесплатной<br><em style="font-style:italic;color:var(--brass-light)">консультации</em></h2>
+      <p>
+        Первичная консультация и осмотр — бесплатно. Врач ответит на все вопросы, составит предварительный план и сориентирует по стоимости без обязательств.
+      </p>
+      <div class="booking-perks">
+        <div class="booking-perk">
+          <div class="perk-dot"></div>
+          Запись в день обращения
+        </div>
+        <div class="booking-perk">
+          <div class="perk-dot"></div>
+          Работаем без выходных с 9:00 до 21:00
+        </div>
+        <div class="booking-perk">
+          <div class="perk-dot"></div>
+          Бесплатный 3D-снимок при первом визите
+        </div>
+        <div class="booking-perk">
+          <div class="perk-dot"></div>
+          Рассрочка 0% до 24 месяцев
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-form reveal reveal-delay-2">
+      <div class="form-title">Записаться онлайн</div>
+      <div class="form-sub">Ответим в течение 15 минут и подберём удобное время</div>
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Ваше имя</label>
+            <input type="text" placeholder="Иван Петров" required>
+          </div>
+          <div class="form-group">
+            <label>Телефон</label>
+            <input type="tel" id="phoneInput" placeholder="+7 (___) ___-__-__" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Услуга</label>
+          <select>
+            <option value="">Выберите услугу</option>
+            <option>Консультация (бесплатно)</option>
+            <option>Имплантация</option>
+            <option>Виниры / Коронки</option>
+            <option>Ортодонтия (брекеты / элайнеры)</option>
+            <option>Гигиена / Отбеливание</option>
+            <option>Лечение кариеса</option>
+            <option>Детская стоматология</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Удобное время</label>
+          <select>
+            <option value="">Любое время</option>
+            <option>Утро (9:00–12:00)</option>
+            <option>День (12:00–17:00)</option>
+            <option>Вечер (17:00–21:00)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-booking">Записаться на консультацию →</button>
+        <div class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>NovaDent</h3>
+        <p>Премиальная стоматологическая клиника в Москве. Лечение, которому доверяют тысячи пациентов с 2009 года.</p>
+        <br>
+        <div style="display:flex;gap:16px;margin-top:8px">
+          <a href="#" style="width:36px;height:36px;background:rgba(255,255,255,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:.8rem;transition:background .2s">VK</a>
+          <a href="#" style="width:36px;height:36px;background:rgba(255,255,255,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:.7rem;transition:background .2s">TG</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="#">Имплантация</a></li>
+          <li><a href="#">Виниры и коронки</a></li>
+          <li><a href="#">Ортодонтия</a></li>
+          <li><a href="#">Гигиена</a></li>
+          <li><a href="#">Детская</a></li>
+          <li><a href="#">Все услуги</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Клиника</h4>
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Врачи</a></li>
+          <li><a href="#">Технологии</a></li>
+          <li><a href="#">Цены</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Статьи</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact footer-col">
+        <h4>Контакты</h4>
+        <a href="tel:+74951234567" class="footer-phone">+7 (495) 123-45-67</a>
+        <p>Пн–Вс: 9:00 — 21:00</p>
+        <br>
+        <p style="opacity:.5">Москва, ул. Тверская, 18с1<br>м. Тверская / Пушкинская</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div style="opacity:.4">© 2026 NovaDent. Лицензия МЗ РФ № ЛО-77-01-021483</div>
+      <div class="footer-license">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+        <a href="#">Сведения о медицинской организации</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── SCRIPTS ─── -->
+<script src="js/main.js"></script>
+</body>
+</html>
